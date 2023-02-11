@@ -10,6 +10,16 @@ With the newer versions, a lot of the code has been cleaned up so it's a lot mor
 
 No PRs please.  If you have any issues, find me on the Blitz [discord] and tag me!
 
+## Examples
+
+[Basic] example
+
+[Mantine] example
+
+Please check out their documentation for more indepth examples...
+
 [here]: https://remix-forms.seasoned.cc/
 [BlitzJS]: https://blitzjs.com/
 [discord]: https://discord.blitzjs.com/
+[Basic]: https://codesandbox.io/s/hungry-archimedes-yopb5k?file=/src/App.tsx
+[Mantine]: https://codesandbox.io/s/epic-rubin-xxmxri?file=/src/App.tsx
