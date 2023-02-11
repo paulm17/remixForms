@@ -1,10 +1,13 @@
-import { SomeZodObject } from 'zod'
-import { RenderFieldProps } from './Form'
+import * as React from 'react'
+import type { SomeZodObject } from 'zod'
+import type { RenderFieldProps } from './createForm'
 
-export default function defaultRenderField<Schema extends SomeZodObject>({
+function defaultRenderField<Schema extends SomeZodObject>({
   Field,
   name,
   ...props
 }: RenderFieldProps<Schema>) {
   return <Field key={String(name)} name={name} {...props} />
 }
+
+export { defaultRenderField }

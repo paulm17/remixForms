@@ -1,21 +1,15 @@
-export { Form, FORM_ERROR } from "./Form"
+export { Form } from "./createForm"
+export { useField } from "./createField"
+
 export {
-  MantineInput as FormInput,
   MantineButton as FormButton,
+  MantineInput as FormInput,
   MantineSelect as FormSelect,
 } from "./mantineComponent"
-//export { formAction, performMutation } from './formAction.server'
 
 export type {
   FormProps,
-  FormProps2,
   RenderFieldProps,
   RenderField,
-} from "./Form"
-
-/*export type {
-  FormActionProps,
-  Callback,
-  PerformMutation,
-} from './formAction.server'
-*/
+  FormSchema,
+} from "./createForm"

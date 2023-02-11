@@ -1,5 +1,10 @@
 import { forwardRef } from "react"
-import { Button, Input, Select } from "@mantine/core"
+import { Button, Input, Select, SelectProps } from "@mantine/core"
+
+export const MantineButton = forwardRef<
+  HTMLButtonElement,
+  JSX.IntrinsicElements["button"]
+>(({ type, ...props }, ref) => <Button type={type} {...props} ref={ref} />)
 
 export const MantineInput = forwardRef<
   HTMLInputElement,
@@ -8,19 +13,9 @@ export const MantineInput = forwardRef<
   <Input {...props} type={type} ref={ref} />
 ))
 
-export const MantineButton = forwardRef<
-  HTMLButtonElement,
-  JSX.IntrinsicElements["button"]
->(({ type = "button", ...props }, ref) => (
-  <Button {...props} type={type} ref={ref} />
-))
-
-type selectProps = {
-  data: { value: string; label: string }[]
-  dropdownPosition?: "top" | "bottom"
-}
-
 export const MantineSelect = forwardRef<
-  HTMLInputElement,
-  selectProps & JSX.IntrinsicElements["select"]
->(({ data, ...props }, ref) => <Select {...props} ref={ref} data={data} />)
+  HTMLSelectElement,
+  JSX.IntrinsicElements["select"] &
+    SelectProps &
+    React.RefAttributes<HTMLInputElement>
+>(({ data, ...props }, ref) => <Select {...props} data={data} ref={ref} />)
