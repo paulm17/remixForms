@@ -16,7 +16,7 @@ No PRs please.  If you have any issues, find me on the Blitz [discord] and tag m
 
 [Mantine] example
 
-[Field] broken out example
+[Custom] fields example
 
 Please check out their documentation for more indepth examples...
 
@@ -25,4 +25,4 @@ Please check out their documentation for more indepth examples...
 [discord]: https://discord.blitzjs.com/
 [Basic]: https://codesandbox.io/s/hungry-archimedes-yopb5k?file=/src/App.tsx
 [Mantine]: https://codesandbox.io/s/epic-rubin-xxmxri?file=/src/App.tsx
-[Field]: https://codesandbox.io/s/tender-gwen-evorc1?file=/src/App.tsx
+[Custom]: https://codesandbox.io/s/tender-gwen-evorc1?file=/src/App.tsx
